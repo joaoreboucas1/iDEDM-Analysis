@@ -1,0 +1,4 @@
+*.txt
+chains/
+.ipynb_checkpoints/
+Figures/.ipynb_checkpoints/
