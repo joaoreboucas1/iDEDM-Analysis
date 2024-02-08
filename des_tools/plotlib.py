@@ -117,6 +117,7 @@ DEFAULT_PLABELS = {\
                    'cosmological_parameters--alens':r'$A_{\rm L}$',\
                    'cosmological_parameters--tau':r'$\tau$',\
                    'cosmological_parameters--mnu':r'$\sum m_{\nu}\,[{\rm eV}]$',\
+                   'cosmological_parameters--xi_interaction':r'$\xi$',\
                    'cosmological_parameters--fde_zc':r'$f_\mathrm{EDE}(z_c)$',\
                    'cosmological_parameters--zc':r'$z_c$',\
                    'cosmological_parameters--theta_i':r'$\theta_i$',\
@@ -985,7 +986,7 @@ def get_gdchain(inputf,flabel=None,params=None,\
     infile = os.path.join(indatdir,inputf)
     #print('>>>>>infile',infile)
     if not os.path.isfile(infile):
-        #print("NO FILE",infile)
+        print("NO FILE",infile)
         return None 
     elif os.stat(infile).st_size == 0:
         #print("EMPTY FILE",infile)
